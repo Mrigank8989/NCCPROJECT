@@ -270,7 +270,7 @@ const allQuizQuestions = {
 
 
       // Add 49 more questions for easy set 2
-    ]
+    ],
     3: [
   // ---------- MCQ SECTION ----------
   {
