@@ -177,7 +177,7 @@ function updateButtonStates() {
 
 
 function startTimer() {
-  const totalTime = 3000;
+  const totalTime = 1500;
   const endTime = Date.now() + totalTime * 1000;
 
   timer = setInterval(() => {
