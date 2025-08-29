@@ -271,6 +271,264 @@ const allQuizQuestions = {
 
       // Add 49 more questions for easy set 2
     ]
+    3: [
+  // ---------- MCQ SECTION ----------
+  {
+    question: "______________ is necessary for many reasons; personal, social, health, psychological or simply as a way of life.",
+    options: ["Maintaining hygiene and sanitation", "Infection", "Every person", "Both a and b"],
+    answer: 0
+  },
+  {
+    question: "What are necessary to preserve and improve the health of the individual and of the community as a whole?",
+    options: ["Food and Personal hygiene", "Food only", "Personal only", "None"],
+    answer: 0
+  },
+  {
+    question: "Which hygiene involves all aspects of the health of an individual?",
+    options: ["Personal", "Mental", "Social", "Hand"],
+    answer: 0
+  },
+  {
+    question: "Every person must remain in perfect ___________, only then he can serve the community and the country well.",
+    options: ["Physical, mental and social health", "Mental health", "Physical health", "Medical health"],
+    answer: 0
+  },
+  {
+    question: "Which practices help in the maintenance and promotion of a person’s health?",
+    options: ["Maintenance of personal hygiene", "Maintenance of mental hygiene", "Maintenance of social hygiene", "None"],
+    answer: 0
+  },
+  {
+    question: "What can lead to foodborne diseases and death of consumer?",
+    options: ["Food hygiene", "Personal hygiene", "Physical hygiene", "Both a and b"],
+    answer: 0
+  },
+  {
+    question: "What are the keys to safer food?",
+    options: ["All", "Keep clean", "Cook thoroughly", "Keep food at safe temperature"],
+    answer: 0
+  },
+  {
+    question: "Which is the potential source of infection and is liable to contamination during its journey from producer to consumer?",
+    options: ["Food", "Germs", "Virus", "Earthworm"],
+    answer: 0
+  },
+  {
+    question: "The heating of milk to destroy pathogens without loss of nutritive value is called?",
+    options: ["Pasteurization", "Boiling", "Tonding", "None"],
+    answer: 0
+  },
+  {
+    question: "How many hours sample of food provided to cadets is preserved after the meal?",
+    options: ["48", "24", "36", "50"],
+    answer: 0
+  },
+  {
+    question: "What is the dimension of soakage pit of cook house?",
+    options: ["6 feet deep and 4.5 feet wide", "6 feet deep and 4.5 inches", "6 feet deep and 4.5 meters", "None"],
+    answer: 0
+  },
+  {
+    question: "How many types of camp latrines are there?",
+    options: ["4", "2", "3", "6"],
+    answer: 0
+  },
+  {
+    question: "Anything which interferes with respiration producing irregularities in breathing is called?",
+    options: ["Asphyxia", "Hypoxia", "Insomnia", "Respiration"],
+    answer: 0
+  },
+  {
+    question: "Which stage of unconsciousness has restlessness of body and mind?",
+    options: ["2nd stage", "3rd stage", "9th stage", "None"],
+    answer: 0
+  },
+  {
+    question: "Casualty should be supine, airway cleared, neck extended. This method is?",
+    options: ["Mouth-to-mouth respiration", "Breathing", "Save life", "None"],
+    answer: 0
+  },
+  {
+    question: "A break in continuity of the skin or muscles membrane is called?",
+    options: ["Wound", "Cut", "Brake", "Pain"],
+    answer: 0
+  },
+  {
+    question: "What is the cause of a lacerated wound?",
+    options: ["Blunt instrument", "Torn uneven edge", "Sharp knife", "Both b and c"],
+    answer: 3
+  },
+  {
+    question: "An injury where tissues are irregularly torn or ruptured but skin may not break is?",
+    options: ["Contusion wound", "Crested wound", "Inside wound", "None"],
+    answer: 0
+  },
+  {
+    question: "Incisions, Grazes, Avulsions, Puncture wounds are classified as?",
+    options: ["Open wounds", "Closed wounds", "Burn wounds", "None"],
+    answer: 0
+  },
+  {
+    question: "The Yogic system of health involves exercise of skeletal and smooth muscles. This is a?",
+    options: ["Characteristic of Yoga", "Motto of Yoga", "Goal of Yoga", "None"],
+    answer: 0
+  },
+
+  // ---------- FILL IN THE BLANKS (as MCQs) ----------
+  {
+    question: "______________ asana provides good exercise to abdominal muscles, back and thighs.",
+    options: ["Bhujangasana", "Paschimottanasana", "Dhanurasana", "Padmasana"],
+    answer: 2
+  },
+  {
+    question: "______________ asana improves circulatory, respiratory, alimentary systems. Timings: 0.5–1 min.",
+    options: ["Sarvangasana", "Tadasana", "Shavasana", "Vrikshasana"],
+    answer: 0
+  },
+  {
+    question: "______________ is a combined sequence of 12 positions.",
+    options: ["Surya Namaskar", "Pranayama", "Shavasana", "Padmasana"],
+    answer: 0
+  },
+  {
+    question: "UNO declared 21 June as ______________.",
+    options: ["International Yoga Day", "Health Day", "Peace Day", "Meditation Day"],
+    answer: 0
+  },
+  {
+    question: "______________ asana is to awaken the power of Kundalini.",
+    options: ["Kundalini Asana", "Padmasana", "Siddhasana", "Bhujangasana"],
+    answer: 2
+  },
+  {
+    question: "First aid treatment: make casualty breathe through mouth is ______________.",
+    options: ["Mouth-to-mouth respiration", "Artificial nose breathing", "Cardiac massage", "Heimlich maneuver"],
+    answer: 0
+  },
+  {
+    question: "In Dog Bite, dog and patient should be kept ______________ for 10 days.",
+    options: ["Under observation", "Chained", "Separated", "Caged"],
+    answer: 0
+  },
+  {
+    question: "Cadets by routine are prone to injuries and must possess knowledge of ______________.",
+    options: ["First Aid", "Yoga", "Navigation", "Drill"],
+    answer: 0
+  },
+  {
+    question: "Patient responds to painful stimuli only. This stage is ______________.",
+    options: ["Stupor", "Coma", "Fainting", "Shock"],
+    answer: 0
+  },
+  {
+    question: "Stage where patient makes no response to any stimulus is ______________.",
+    options: ["Coma", "Stupor", "Death", "Shock"],
+    answer: 0
+  },
+  {
+    question: "______________ contains mainly animal droppings and leftover feeds.",
+    options: ["Dung pit", "Manure pit", "Sewage pit", "Garbage bin"],
+    answer: 0
+  },
+  {
+    question: "DTLs of proper specifications will be constructed and covered by ______________.",
+    options: ["Soil", "Concrete", "Wood", "Plastic"],
+    answer: 0
+  },
+  {
+    question: "Removal of waste products and refuse is called ______________.",
+    options: ["Sanitation", "Filtration", "Sewage", "Refuse disposal"],
+    answer: 0
+  },
+  {
+    question: "Food hygiene ensures food safety from ______________ to ______________.",
+    options: ["Farm to Plate", "Market to Kitchen", "Cook to Serve", "Seed to Meal"],
+    answer: 0
+  },
+  {
+    question: "Camp urinals should be treated daily with ______________.",
+    options: ["Lime", "Bleach", "Phenyl", "Soap water"],
+    answer: 0
+  },
+  {
+    question: "Dimension of shallow trench latrine is ______________.",
+    options: ["4m x 1m x 1m", "1m x 1m x 1m", "3m x 2m x 1m", "None"],
+    answer: 0
+  },
+  {
+    question: "Personal and food hygiene preserve health of ______________ and ______________.",
+    options: ["Individual and Community", "Army and Cadets", "Men and Women", "Both a and b"],
+    answer: 0
+  },
+  {
+    question: "Responsibility for personal health lies with ______________.",
+    options: ["Individual", "Community", "NCC", "Doctor"],
+    answer: 0
+  },
+  {
+    question: "Brushing teeth prevents ______________ in mouth.",
+    options: ["Accumulation of bacteria", "Bleeding gums", "Cavities", "Pain"],
+    answer: 0
+  },
+  {
+    question: "Ratio is 5 trenches for first 100 users and ______________ for each 100 more.",
+    options: ["3", "2", "4", "5"],
+    answer: 0
+  },
+
+  // ---------- TRUE / FALSE (as MCQs) ----------
+  {
+    question: "Waste food will be buried in refuse pits located away from cook houses.",
+    options: ["True", "False"],
+    answer: 0
+  },
+  {
+    question: "The least common urinal used in camps is Funnel Urinals over soakage pit.",
+    options: ["True", "False"],
+    answer: 0
+  },
+  {
+    question: "Personal hygiene involves practices to care for bodily health through cleanliness.",
+    options: ["True", "False"],
+    answer: 0
+  },
+  {
+    question: "Wooden frames will not be washed twice daily and treated with lime.",
+    options: ["False", "True"],
+    answer: 0
+  },
+  {
+    question: "It is not important for cadets to know basic First Aid in emergencies.",
+    options: ["False", "True"],
+    answer: 0
+  },
+  {
+    question: "Do not remove embedded objects is treatment of open chest wounds.",
+    options: ["True", "False"],
+    answer: 0
+  },
+  {
+    question: "Most bites occur on exposed parts of limbs like hands, feet, legs.",
+    options: ["True", "False"],
+    answer: 0
+  },
+  {
+    question: "Bite by scorpions should be treated like bee sting.",
+    options: ["False", "True"],
+    answer: 0
+  },
+  {
+    question: "Pain on deep breathing/coughing is sign of internal organ injury.",
+    options: ["True", "False"],
+    answer: 0
+  },
+  {
+    question: "Heat strokes, electric shocks, epilepsy can cause coma.",
+    options: ["True", "False"],
+    answer: 0
+  }
+]
+
     // Add sets 3-10 with 50 questions each
   },
   intermediate: {
