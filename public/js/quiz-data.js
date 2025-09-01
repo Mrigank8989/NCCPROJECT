@@ -527,7 +527,521 @@ const allQuizQuestions = {
     options: ["True", "False"],
     answer: 0
   }
+],
+    5: [
+  {
+    question: "Health is a state of complete ________, mental and social well-being.",
+    options: ["Physical", "Spiritual", "Emotional", "Economic"],
+    answer: 0
+  },
+  {
+    question: "Deficiency of Vitamin A causes ________.",
+    options: ["Night blindness", "Scurvy", "Rickets", "Beri-Beri"],
+    answer: 0
+  },
+  {
+    question: "Malaria is caused by ________.",
+    options: ["Plasmodium", "Bacteria", "Virus", "Fungus"],
+    answer: 0
+  },
+  {
+    question: "The disease Tuberculosis affects the ________.",
+    options: ["Lungs", "Liver", "Kidney", "Heart"],
+    answer: 0
+  },
+  {
+    question: "The normal body temperature of a healthy person is ________.",
+    options: ["37°C", "36°C", "38°C", "39°C"],
+    answer: 0
+  },
+  {
+    question: "The unit of heredity is ________.",
+    options: ["Gene", "Chromosome", "DNA", "RNA"],
+    answer: 0
+  },
+  {
+    question: "Deficiency of Iodine causes ________.",
+    options: ["Goitre", "Anaemia", "Rickets", "Scurvy"],
+    answer: 0
+  },
+  {
+    question: "The deficiency disease caused by the lack of Vitamin C is ________.",
+    options: ["Scurvy", "Rickets", "Night blindness", "Pellagra"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by deficiency of Vitamin D is ________.",
+    options: ["Rickets", "Scurvy", "Beri-Beri", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The causative organism of Cholera is ________.",
+    options: ["Vibrio cholerae", "Plasmodium", "Salmonella typhi", "Mycobacterium"],
+    answer: 0
+  },
+  {
+    question: "Deficiency of Vitamin B1 leads to ________.",
+    options: ["Beri-Beri", "Rickets", "Scurvy", "Night blindness"],
+    answer: 0
+  },
+  {
+    question: "Deficiency of Iron in the body causes ________.",
+    options: ["Anaemia", "Obesity", "Diabetes", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The causative organism of Typhoid is ________.",
+    options: ["Salmonella typhi", "Vibrio cholerae", "Plasmodium", "Virus"],
+    answer: 0
+  },
+  {
+    question: "The human heart is made up of ________ muscle.",
+    options: ["Cardiac", "Smooth", "Skeletal", "Voluntary"],
+    answer: 0
+  },
+  {
+    question: "The largest organ in the human body is ________.",
+    options: ["Skin", "Liver", "Lungs", "Kidney"],
+    answer: 0
+  },
+  {
+    question: "The smallest structural and functional unit of the human body is ________.",
+    options: ["Cell", "Tissue", "Organ", "System"],
+    answer: 0
+  },
+  {
+    question: "The number of chromosomes in human body cells is ________.",
+    options: ["46", "44", "48", "23"],
+    answer: 0
+  },
+  {
+    question: "The universal donor blood group is ________.",
+    options: ["O Negative", "A Positive", "B Negative", "AB Positive"],
+    answer: 0
+  },
+  {
+    question: "The universal recipient blood group is ________.",
+    options: ["AB Positive", "O Negative", "A Negative", "B Positive"],
+    answer: 0
+  },
+  {
+    question: "The total number of bones in an adult human body is ________.",
+    options: ["206", "208", "210", "212"],
+    answer: 0
+  },
+  {
+    question: "The main organ of the circulatory system is ________.",
+    options: ["Heart", "Lungs", "Kidneys", "Liver"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is essential for blood clotting?",
+    options: ["Vitamin K", "Vitamin A", "Vitamin D", "Vitamin C"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of which mineral causes Anaemia?",
+    options: ["Iron", "Calcium", "Iodine", "Zinc"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Calcium causes ________.",
+    options: ["Weak bones", "Goitre", "Scurvy", "Anaemia"],
+    answer: 0
+  },
+  {
+    question: "The largest gland in the human body is ________.",
+    options: ["Liver", "Pancreas", "Pituitary", "Adrenal"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of protein in children causes ________.",
+    options: ["Kwashiorkor", "Marasmus", "Rickets", "Scurvy"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by deficiency of Niacin is ________.",
+    options: ["Pellagra", "Scurvy", "Rickets", "Beri-Beri"],
+    answer: 0
+  },
+  {
+    question: "The main excretory organ in human body is ________.",
+    options: ["Kidneys", "Lungs", "Skin", "Liver"],
+    answer: 0
+  },
+  {
+    question: "The functional unit of the kidney is ________.",
+    options: ["Nephron", "Neuron", "Alveoli", "Axon"],
+    answer: 0
+  },
+  {
+    question: "The average weight of human brain is about ________.",
+    options: ["1.5 kg", "1.2 kg", "2 kg", "800 g"],
+    answer: 0
+  },
+  {
+    question: "The powerhouse of the cell is ________.",
+    options: ["Mitochondria", "Ribosome", "Chloroplast", "Golgi body"],
+    answer: 0
+  },
+  {
+    question: "The master gland in the human body is ________.",
+    options: ["Pituitary gland", "Adrenal gland", "Thyroid gland", "Pancreas"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by the deficiency of Vitamin B12 is ________.",
+    options: ["Pernicious Anaemia", "Rickets", "Scurvy", "Night blindness"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin K causes ________.",
+    options: ["Poor blood clotting", "Scurvy", "Rickets", "Night blindness"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by deficiency of Protein and energy is ________.",
+    options: ["Marasmus", "Rickets", "Goitre", "Scurvy"],
+    answer: 0
+  },
+  {
+    question: "The process by which plants prepare their food is ________.",
+    options: ["Photosynthesis", "Respiration", "Transpiration", "Digestion"],
+    answer: 0
+  },
+  {
+    question: "The pigment responsible for green colour of leaves is ________.",
+    options: ["Chlorophyll", "Haemoglobin", "Melanin", "Carotene"],
+    answer: 0
+  },
+  {
+    question: "The number of chambers in human heart is ________.",
+    options: ["4", "2", "3", "5"],
+    answer: 0
+  },
+  {
+    question: "Which of the following diseases is caused by Virus?",
+    options: ["Polio", "Cholera", "Tuberculosis", "Malaria"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by deficiency of Vitamin E is ________.",
+    options: ["Sterility", "Scurvy", "Night blindness", "Rickets"],
+    answer: 0
+  },
+  {
+    question: "Which organ produces insulin?",
+    options: ["Pancreas", "Liver", "Kidney", "Stomach"],
+    answer: 0
+  },
+  {
+    question: "The exchange of gases in human beings takes place in ________.",
+    options: ["Alveoli", "Trachea", "Bronchi", "Larynx"],
+    answer: 0
+  },
+  {
+    question: "The organ which supplies oxygenated blood to the body is ________.",
+    options: ["Heart", "Lungs", "Kidney", "Brain"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is called Ascorbic Acid?",
+    options: ["Vitamin C", "Vitamin A", "Vitamin D", "Vitamin K"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of which vitamin causes Rickets?",
+    options: ["Vitamin D", "Vitamin A", "Vitamin C", "Vitamin B12"],
+    answer: 0
+  },
+  {
+    question: "The main function of Red blood cells is ________.",
+    options: ["Carry oxygen", "Fight infection", "Clot blood", "Provide immunity"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by deficiency of Vitamin B2 is ________.",
+    options: ["Cheilitis", "Rickets", "Scurvy", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Folic Acid causes ________.",
+    options: ["Anaemia", "Scurvy", "Rickets", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The enzyme present in saliva is ________.",
+    options: ["Amylase", "Lipase", "Pepsin", "Trypsin"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by the bite of female Anopheles mosquito is ________.",
+    options: ["Malaria", "Dengue", "Chikungunya", "Filaria"],
+    answer: 0
+  },
+    {
+    question: "The disease caused by the bite of Aedes aegypti mosquito is ________.",
+    options: ["Dengue", "Malaria", "Filaria", "Plague"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin B6 causes ________.",
+    options: ["Anaemia", "Scurvy", "Rickets", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by deficiency of Vitamin B5 is ________.",
+    options: ["Pellagra", "Rickets", "Scurvy", "Beri-Beri"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by deficiency of Vitamin H is ________.",
+    options: ["Dermatitis", "Scurvy", "Rickets", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "Which disease is spread by housefly?",
+    options: ["Cholera", "Diabetes", "Asthma", "Arthritis"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by deficiency of Vitamin K is ________.",
+    options: ["Haemorrhage", "Rickets", "Scurvy", "Night blindness"],
+    answer: 0
+  },
+  {
+    question: "Which organ purifies the blood in the human body?",
+    options: ["Kidneys", "Liver", "Heart", "Lungs"],
+    answer: 0
+  },
+  {
+    question: "The average blood volume in an adult is about ________.",
+    options: ["5 litres", "3 litres", "7 litres", "4 litres"],
+    answer: 0
+  },
+  {
+    question: "The normal heartbeat rate per minute is ________.",
+    options: ["72", "70", "74", "80"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of which vitamin causes Pellagra?",
+    options: ["Vitamin B3", "Vitamin A", "Vitamin C", "Vitamin D"],
+    answer: 0
+  },
+  {
+    question: "Which part of the human skeleton protects the brain?",
+    options: ["Skull", "Ribs", "Vertebral column", "Pelvis"],
+    answer: 0
+  },
+  {
+    question: "The total number of ribs in human body is ________.",
+    options: ["24", "22", "26", "28"],
+    answer: 0
+  },
+  {
+    question: "Which part of the human body produces bile?",
+    options: ["Liver", "Pancreas", "Gall bladder", "Kidney"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of which mineral causes Goitre?",
+    options: ["Iodine", "Iron", "Calcium", "Zinc"],
+    answer: 0
+  },
+  {
+    question: "Which organ is affected by Pneumonia?",
+    options: ["Lungs", "Heart", "Liver", "Kidneys"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by deficiency of Protein is ________.",
+    options: ["Kwashiorkor", "Rickets", "Goitre", "Scurvy"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by deficiency of Carbohydrate is ________.",
+    options: ["Ketosis", "Rickets", "Scurvy", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is also known as Retinol?",
+    options: ["Vitamin A", "Vitamin B1", "Vitamin C", "Vitamin D"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of which vitamin causes Sterility?",
+    options: ["Vitamin E", "Vitamin A", "Vitamin C", "Vitamin D"],
+    answer: 0
+  },
+  {
+    question: "The part of the brain which controls balance is ________.",
+    options: ["Cerebellum", "Cerebrum", "Medulla oblongata", "Pons"],
+    answer: 0
+  },
+  {
+    question: "The longest bone in human body is ________.",
+    options: ["Femur", "Tibia", "Fibula", "Humerus"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by Plasmodium is ________.",
+    options: ["Malaria", "Dengue", "Cholera", "Tuberculosis"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of which vitamin causes Cheilitis?",
+    options: ["Vitamin B2", "Vitamin B1", "Vitamin B6", "Vitamin C"],
+    answer: 0
+  },
+  {
+    question: "Which blood cells help in blood clotting?",
+    options: ["Platelets", "RBC", "WBC", "Plasma"],
+    answer: 0
+  },
+  {
+    question: "Which gas is exhaled during respiration?",
+    options: ["Carbon dioxide", "Oxygen", "Nitrogen", "Carbon monoxide"],
+    answer: 0
+  },
+  {
+    question: "The pigment responsible for skin colour is ________.",
+    options: ["Melanin", "Haemoglobin", "Keratin", "Carotene"],
+    answer: 0
+  },
+  {
+    question: "Which blood cells fight against infection?",
+    options: ["WBC", "RBC", "Platelets", "Plasma"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin prevents Rickets?",
+    options: ["Vitamin D", "Vitamin C", "Vitamin A", "Vitamin K"],
+    answer: 0
+  },
+  {
+    question: "Which organ controls the entire body?",
+    options: ["Brain", "Heart", "Liver", "Kidney"],
+    answer: 0
+  },
+  {
+    question: "The main organ of the respiratory system is ________.",
+    options: ["Lungs", "Heart", "Kidneys", "Liver"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by deficiency of Protein and Carbohydrate both is ________.",
+    options: ["Marasmus", "Rickets", "Scurvy", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The red pigment in blood is ________.",
+    options: ["Haemoglobin", "Chlorophyll", "Melanin", "Keratin"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is also known as Calciferol?",
+    options: ["Vitamin D", "Vitamin A", "Vitamin C", "Vitamin K"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by deficiency of Vitamin B9 is ________.",
+    options: ["Megaloblastic Anaemia", "Rickets", "Scurvy", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "Which part of the blood carries oxygen?",
+    options: ["RBC", "WBC", "Platelets", "Plasma"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is known as Riboflavin?",
+    options: ["Vitamin B2", "Vitamin B1", "Vitamin B6", "Vitamin C"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by deficiency of Vitamin B7 is ________.",
+    options: ["Dermatitis", "Rickets", "Scurvy", "Beri-Beri"],
+    answer: 0
+  },
+  {
+    question: "Which part of the digestive system absorbs nutrients?",
+    options: ["Small intestine", "Large intestine", "Stomach", "Oesophagus"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is essential for good eyesight?",
+    options: ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin K"],
+    answer: 0
+  },
+  {
+    question: "The disease caused by deficiency of Protein alone is ________.",
+    options: ["Kwashiorkor", "Marasmus", "Scurvy", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin B complex causes ________.",
+    options: ["Glossitis", "Scurvy", "Rickets", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The process of breaking down food into simpler substances is ________.",
+    options: ["Digestion", "Respiration", "Assimilation", "Excretion"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin A causes ________.",
+    options: ["Night blindness", "Rickets", "Scurvy", "Beri-Beri"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin C causes ________.",
+    options: ["Scurvy", "Rickets", "Beri-Beri", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin D causes ________.",
+    options: ["Rickets", "Scurvy", "Beri-Beri", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin B1 causes ________.",
+    options: ["Beri-Beri", "Rickets", "Scurvy", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin B2 causes ________.",
+    options: ["Cheilitis", "Rickets", "Scurvy", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin B12 causes ________.",
+    options: ["Pernicious Anaemia", "Rickets", "Scurvy", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin B3 causes ________.",
+    options: ["Pellagra", "Rickets", "Scurvy", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin B6 causes ________.",
+    options: ["Anaemia", "Rickets", "Scurvy", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin B9 causes ________.",
+    options: ["Megaloblastic Anaemia", "Rickets", "Scurvy", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin E causes ________.",
+    options: ["Sterility", "Rickets", "Scurvy", "Goitre"],
+    answer: 0
+  }
 ]
+
+
 
     // Add sets 3-10 with 50 questions each
   },
