@@ -1075,13 +1075,257 @@ const allQuizQuestions = {
       // Add 45 more questions for intermediate set 1
     ],
     2: [
-      {
-        question: "The Directorate responsible for Air Wing cadets in the Eastern region is located at?",
-        options: ["Kolkata", "Patna", "Ranchi", "Guwahati"],
-        answer: 0
-      },
-      // Add 49 more questions for intermediate set 2
-    ]
+  {
+    question: "Which vitamin is essential for blood clotting?",
+    options: ["Vitamin A", "Vitamin K", "Vitamin C", "Vitamin D"],
+    answer: 1
+  },
+  {
+    question: "Which of the following diseases is caused by a deficiency of Vitamin C?",
+    options: ["Scurvy", "Rickets", "Night Blindness", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of which vitamin causes rickets?",
+    options: ["Vitamin D", "Vitamin A", "Vitamin B1", "Vitamin K"],
+    answer: 0
+  },
+  {
+    question: "Which mineral is essential for the formation of haemoglobin?",
+    options: ["Calcium", "Iron", "Iodine", "Zinc"],
+    answer: 1
+  },
+  {
+    question: "The disease caused by deficiency of iodine is?",
+    options: ["Goitre", "Anaemia", "Scurvy", "Rickets"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is known as Retinol?",
+    options: ["Vitamin A", "Vitamin D", "Vitamin C", "Vitamin K"],
+    answer: 0
+  },
+  {
+    question: "Which disease is caused by deficiency of Vitamin A?",
+    options: ["Night Blindness", "Beri-Beri", "Rickets", "Scurvy"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is also known as Ascorbic Acid?",
+    options: ["Vitamin A", "Vitamin B1", "Vitamin C", "Vitamin D"],
+    answer: 2
+  },
+  {
+    question: "The deficiency of Vitamin B1 causes which disease?",
+    options: ["Beri-Beri", "Rickets", "Scurvy", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is also known as Calciferol?",
+    options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    answer: 3
+  },
+  {
+    question: "The deficiency of which vitamin causes Pellagra?",
+    options: ["Vitamin B3", "Vitamin B1", "Vitamin B2", "Vitamin B6"],
+    answer: 0
+  },
+  {
+    question: "Which disease is caused by deficiency of Vitamin D?",
+    options: ["Rickets", "Scurvy", "Beri-Beri", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "Which of the following diseases is caused by deficiency of Vitamin B12?",
+    options: ["Pernicious Anaemia", "Night Blindness", "Rickets", "Scurvy"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Niacin causes which disease?",
+    options: ["Pellagra", "Rickets", "Goitre", "Scurvy"],
+    answer: 0
+  },
+  {
+    question: "Deficiency of which vitamin causes Sterility?",
+    options: ["Vitamin E", "Vitamin A", "Vitamin C", "Vitamin D"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is necessary for normal vision?",
+    options: ["Vitamin A", "Vitamin D", "Vitamin K", "Vitamin C"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin helps in absorption of calcium?",
+    options: ["Vitamin D", "Vitamin C", "Vitamin A", "Vitamin K"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin prevents rickets?",
+    options: ["Vitamin D", "Vitamin A", "Vitamin C", "Vitamin K"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin K leads to?",
+    options: ["Delayed Blood Clotting", "Night Blindness", "Rickets", "Scurvy"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is essential for healthy skin?",
+    options: ["Vitamin E", "Vitamin A", "Vitamin D", "Vitamin C"],
+    answer: 0
+  },
+  {
+    question: "Deficiency of Vitamin B2 causes?",
+    options: ["Cheilitis", "Goitre", "Rickets", "Scurvy"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is also called Riboflavin?",
+    options: ["Vitamin B2", "Vitamin B1", "Vitamin B3", "Vitamin B5"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of Vitamin B6 causes?",
+    options: ["Anaemia", "Night Blindness", "Rickets", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is also known as Pyridoxine?",
+    options: ["Vitamin B6", "Vitamin B2", "Vitamin B12", "Vitamin C"],
+    answer: 0
+  },
+  {
+    question: "Deficiency of Vitamin B9 causes?",
+    options: ["Megaloblastic Anaemia", "Scurvy", "Rickets", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is also called Folic Acid?",
+    options: ["Vitamin B9", "Vitamin B12", "Vitamin B1", "Vitamin C"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of which vitamin causes megaloblastic anaemia?",
+    options: ["Vitamin B9", "Vitamin B2", "Vitamin B3", "Vitamin B5"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is necessary for the formation of red blood cells?",
+    options: ["Vitamin B12", "Vitamin A", "Vitamin C", "Vitamin D"],
+    answer: 0
+  },
+  {
+    question: "Deficiency of Vitamin H causes?",
+    options: ["Dermatitis", "Scurvy", "Rickets", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is also known as Biotin?",
+    options: ["Vitamin H", "Vitamin B1", "Vitamin B2", "Vitamin B3"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of which vitamin causes dermatitis?",
+    options: ["Vitamin H", "Vitamin B9", "Vitamin C", "Vitamin B6"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin prevents night blindness?",
+    options: ["Vitamin A", "Vitamin C", "Vitamin K", "Vitamin D"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is also known as Tocopherol?",
+    options: ["Vitamin E", "Vitamin A", "Vitamin C", "Vitamin K"],
+    answer: 0
+  },
+  {
+    question: "Deficiency of Vitamin B5 causes?",
+    options: ["Fatigue and Insomnia", "Night Blindness", "Scurvy", "Goitre"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is also known as Pantothenic Acid?",
+    options: ["Vitamin B5", "Vitamin B6", "Vitamin B9", "Vitamin B12"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is called the Anti-Stress Vitamin?",
+    options: ["Vitamin B5", "Vitamin B6", "Vitamin C", "Vitamin D"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of which vitamin leads to fatigue and insomnia?",
+    options: ["Vitamin B5", "Vitamin B1", "Vitamin B3", "Vitamin B6"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is required for proper functioning of nervous system?",
+    options: ["Vitamin B1", "Vitamin A", "Vitamin D", "Vitamin C"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin prevents Beri-Beri?",
+    options: ["Vitamin B1", "Vitamin B2", "Vitamin B3", "Vitamin B6"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin prevents Scurvy?",
+    options: ["Vitamin C", "Vitamin A", "Vitamin D", "Vitamin K"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin prevents Pernicious Anaemia?",
+    options: ["Vitamin B12", "Vitamin B9", "Vitamin B6", "Vitamin B2"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin prevents Pellagra?",
+    options: ["Vitamin B3", "Vitamin B1", "Vitamin B6", "Vitamin B9"],
+    answer: 0
+  },
+  {
+    question: "Deficiency of Vitamin B complex causes?",
+    options: ["Glossitis", "Rickets", "Goitre", "Scurvy"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin deficiency causes Glossitis?",
+    options: ["Vitamin B complex", "Vitamin A", "Vitamin D", "Vitamin K"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin is known as the sunshine vitamin?",
+    options: ["Vitamin D", "Vitamin A", "Vitamin B12", "Vitamin K"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin prevents rickets in children?",
+    options: ["Vitamin D", "Vitamin A", "Vitamin C", "Vitamin K"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin prevents Osteomalacia in adults?",
+    options: ["Vitamin D", "Vitamin C", "Vitamin A", "Vitamin K"],
+    answer: 0
+  },
+  {
+    question: "The deficiency of which vitamin causes Osteomalacia?",
+    options: ["Vitamin D", "Vitamin A", "Vitamin B2", "Vitamin C"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin prevents bone deformities?",
+    options: ["Vitamin D", "Vitamin A", "Vitamin C", "Vitamin B12"],
+    answer: 0
+  },
+  {
+    question: "Which vitamin deficiency causes poor bone growth?",
+    options: ["Vitamin D", "Vitamin C", "Vitamin A", "Vitamin K"],
+    answer: 0
+  },
+  ]
     // Add sets 3-10 with 50 questions each
   },
   hard: {
