@@ -25,48 +25,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Display user's recent scores
-function displayRecentScores() {
-  const currentUser = auth.getCurrentUser();
-  const recentScores = document.getElementById('recentScores');
-  
-  if (!currentUser) {
-    return;
+async function displayRecentScores() {
+  try {
+    let scores = await auth.getUserScores();
+
+    // ✅ Ensure it's always an array
+    if (!Array.isArray(scores)) {
+      console.warn("⚠️ Expected scores to be an array, got:", scores);
+      scores = [];
+    }
+
+    // ✅ Only sort if we have data
+    const sortedScores = scores.length > 0
+      ? scores.sort((a, b) => new Date(b.attempt_date || b.date) - new Date(a.attempt_date || a.date))
+      : [];
+
+    const scoresContainer = document.getElementById("recentScores");
+    scoresContainer.innerHTML = "";
+
+    if (sortedScores.length === 0) {
+      scoresContainer.innerHTML = "<p>No quiz attempts yet.</p>";
+      return;
+    }
+
+    sortedScores.forEach((score) => {
+      const item = document.createElement("div");
+      item.className = "score-item";
+      item.innerHTML = `
+        <p><strong>Quiz ID:</strong> ${score.quiz_id}</p>
+        <p><strong>Score:</strong> ${score.score}/${score.total_questions}</p>
+        <p><strong>Percentage:</strong> ${score.percentage}%</p>
+        <p><strong>Date:</strong> ${new Date(score.attempt_date).toLocaleString()}</p>
+      `;
+      scoresContainer.appendChild(item);
+    });
+  } catch (err) {
+    console.error("❌ Error displaying scores:", err);
   }
-  
-  const scores = auth.getUserScores();
-  
-  if (scores.length === 0) {
-    recentScores.innerHTML = '<p class="no-scores">No recent quiz attempts found.</p>';
-    return;
-  }
-  
-  // Sort scores by date (most recent first)
-  const sortedScores = scores.sort((a, b) => new Date(b.date) - new Date(a.date));
-  
-  // Display only the 5 most recent scores
-  const recentFiveScores = sortedScores.slice(0, 5);
-  
-  recentScores.innerHTML = '';
-  
-  recentFiveScores.forEach(score => {
-    const scoreCard = document.createElement('div');
-    scoreCard.className = 'score-card';
-    
-    // Format date
-    const scoreDate = new Date(score.date);
-    const formattedDate = scoreDate.toLocaleDateString() + ' ' + scoreDate.toLocaleTimeString();
-    
-    scoreCard.innerHTML = `
-      <div class="quiz-info">
-        <h4>${capitalizeFirstLetter(score.difficulty)} - Set ${score.setNumber}</h4>
-        <p>${formattedDate}</p>
-      </div>
-      <div class="score-value">${score.percentage}%</div>
-    `;
-    
-    recentScores.appendChild(scoreCard);
-  });
 }
+
+document.addEventListener("DOMContentLoaded", displayRecentScores);
+
 
 // Setup difficulty buttons
 function setupDifficultyButtons() {
