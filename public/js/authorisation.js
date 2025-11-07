@@ -1,6 +1,6 @@
 // ======================= AUTHORIZATION.JS =======================
 
-const AUTH_KEY = 'ncc_quiz_auth';
+const AUTH_KEY = "ncc_quiz_auth";
 
 document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.getElementById("loginForm");
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ username, password }),
-          credentials: "include"
+          credentials: "include",
         });
 
         const data = await response.json();
@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
             full_name: data.user.full_name,
             username: data.user.username,
             is_admin: data.user.is_admin,
-            accessToken: data.accessToken
+            accessToken: data.accessToken,
           };
 
-          // ✅ Store only auth info
+          // ✅ Save only authentication data
           localStorage.setItem(AUTH_KEY, JSON.stringify(user));
 
           // Redirect based on role
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const password = document.getElementById("regPassword").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
     const adminCode = document.getElementById("adminCode").value.trim();
-    const isAdmin = (adminCode === "secretwalicode"); // 🔐 optional
+    const isAdmin = adminCode === "secretwalicode"; // 🔐 optional
 
     if (password !== confirmPassword) {
       return alert("Passwords do not match.");
@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", () => {
           username,
           full_name,
           password,
-          is_admin: isAdmin
-        })
+          is_admin: isAdmin,
+        }),
       });
 
       const data = await response.json();
@@ -113,13 +113,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ─── Logout ────────────────────────────────────────────────────
   const logoutBtn = document.getElementById("logoutBtn");
-  logoutBtn?.addEventListener("click", () => {
-    logoutUser();
-  });
+  logoutBtn?.addEventListener("click", logoutUser);
 });
 
 // ─── Utility: Auth Handling ─────────────────────────────────────────
-
 function isLoggedIn() {
   return !!localStorage.getItem(AUTH_KEY);
 }
@@ -137,7 +134,7 @@ function getLoggedInUser() {
 function logoutUser() {
   localStorage.removeItem(AUTH_KEY);
   alert("You have been logged out.");
-  window.location.href = 'index.html';
+  window.location.href = "index.html";
 }
 
 // ─── Save Quiz Result to Backend ─────────────────────────────────
@@ -156,7 +153,7 @@ async function saveQuizScore(scoreData) {
       total_questions: scoreData.totalQuestions,
       percentage: scoreData.percentage,
       time_taken: scoreData.timeTaken || 0,
-      is_completed: true
+      is_completed: true,
     };
 
     console.log("📤 Sending quiz result to backend:", payload);
@@ -164,7 +161,7 @@ async function saveQuizScore(scoreData) {
     const response = await fetch("https://nccserver.onrender.com/api/attempts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
+      body: JSON.stringify(payload),
     });
 
     const result = await response.json();
@@ -181,11 +178,33 @@ async function saveQuizScore(scoreData) {
     alert("Error saving quiz attempt. Please try again.");
   }
 }
+
+// ─── Fetch User Scores from Backend ─────────────────────────────
+async function getUserScores() {
+  try {
+    const user = getLoggedInUser();
+    if (!user) return [];
+
+    const res = await fetch(
+      `https://nccserver.onrender.com/api/attempts?user_id=${user.user_id}`
+    );
+    if (!res.ok) throw new Error("Failed to fetch user scores");
+
+    const data = await res.json();
+    console.log("📥 User scores fetched:", data);
+    return data;
+  } catch (err) {
+    console.error("Error fetching user scores:", err);
+    return [];
+  }
+}
+
 // ─── Expose Functions Globally ──────────────────────────────────
 window.auth = {
   getCurrentUser,
   logoutUser,
   getLoggedInUser,
   saveQuizScore,
-  isLoggedIn
+  getUserScores, // ✅ FIXED missing function
+  isLoggedIn,
 };
