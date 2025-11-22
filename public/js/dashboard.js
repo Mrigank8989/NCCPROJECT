@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     alert("Please login first.");
     window.location.href = "index.html";
   }
-  displayRecentScores();
+  displayRecentScores()
   setupDifficultyButtons();
 });
 
