@@ -14,31 +14,258 @@ function shuffleArray(array) {
 const allQuizQuestions = {
   easy: {
     1: [
-      {
-        question: "What does NCC stand for?",
-        options: ["National Cadet Corps", "National Civic Corps", "National Cadet Council", "National Civil Corps"],
-        answer: 0
-      },
-      {
-        question: "When was the NCC established in India?",
-        options: ["1947", "1948", "1950", "1952"],
-        answer: 1
-      },
-      {
-        question: "What is the motto of NCC?",
-        options: ["Service Before Self", "Unity and Discipline", "Duty, Honor, Country", "Unity, Discipline and Leadership"],
-        answer: 1
-      },
-      {
-        question: "Who was the first Director General of NCC?",
-        options: ["Major General Enaith Habibullah", "Major General Himmat Singh", "Major General K.S. Thimayya", "Major General S.P.P Thorat"],
-        answer: 0
-      },
-      {
-        question: "Which of the following is the emblem of NCC?",
-        options: ["Ashoka Chakra", "Ashoka Lion", "Lotus with Tricolor", "Three colors representing Army, Navy and Air Force"],
-        answer: 3
-      },
+  {
+    question: "When did the present-day NCC come into existence?",
+    options: ["1945", "1948", "1950", "1952"],
+    answer: 1
+  },
+  {
+    question: "What is the motto of NCC?",
+    options: ["Unity and Service", "Serve with Honour", "Unity and Discipline", "Discipline and Duty"],
+    answer: 2
+  },
+  {
+    question: "NCC Headquarters is located at:",
+    options: ["Mumbai", "Chennai", "New Delhi", "Kolkata"],
+    answer: 2
+  },
+  {
+    question: "How many NCC Directorates are there in India?",
+    options: ["15", "16", "17", "18"],
+    answer: 2
+  },
+  {
+    question: "Air Wing of NCC was raised in:",
+    options: ["1947", "1948", "1950", "1952"],
+    answer: 2
+  },
+  {
+    question: "What is the meaning of the term 'Cadet'?",
+    options: ["Officer", "Trainee", "Instructor", "Leader"],
+    answer: 1
+  },
+  {
+    question: "Which certificate gives direct SSB entry (no written exam)?",
+    options: ["A Certificate", "B Certificate", "C Certificate", "All certificates"],
+    answer: 2
+  },
+  {
+    question: "How many Army Wing units exist in NCC?",
+    options: ["600", "700", "750", "800"],
+    answer: 1
+  },
+  {
+    question: "Which camp is considered the most prestigious NCC camp?",
+    options: ["CATC", "NIC", "RDC", "ATC"],
+    answer: 2
+  },
+  {
+    question: "Which is NOT an NCC training activity?",
+    options: ["Yoga", "Firing", "Parade", "Laboratory Experiments"],
+    answer: 3
+  },
+  {
+    question: "National Integration means:",
+    options: ["Unity among political leaders", "Feeling of togetherness among citizens", "Joining political groups", "Uniting only people of one religion"],
+    answer: 1
+  },
+  {
+    question: "India is known for its:",
+    options: ["Unity in Diversity", "Single culture", "One language", "One religion"],
+    answer: 0
+  },
+  {
+    question: "Which of the following affects national integration?",
+    options: ["Patriotism", "Communalism", "National festivals", "Sports events"],
+    answer: 1
+  },
+  {
+    question: "Linguistic fanaticism refers to:",
+    options: ["Love for national language", "Hatred or discrimination based on language", "Learning multiple languages", "Speaking politely"],
+    answer: 1
+  },
+  {
+    question: "Cultural integration means:",
+    options: ["Rejecting other cultures", "Adopting one’s own culture only", "Respecting and adopting aspects of multiple cultures", "Destroying cultural practices"],
+    answer: 2
+  },
+  {
+    question: "Self-awareness means:",
+    options: ["Knowing others", "Knowing oneself", "Speaking confidently", "Judging others"],
+    answer: 1
+  },
+  {
+    question: "Empathy is the ability to:",
+    options: ["Read books", "Understand others’ feelings", "Speak loudly", "Control emotions"],
+    answer: 1
+  },
+  {
+    question: "Time management helps in:",
+    options: ["Wasting time", "Increasing stress", "Completing tasks efficiently", "Avoiding work"],
+    answer: 2
+  },
+  {
+    question: "Communication is effective when it is:",
+    options: ["Loud", "One-way", "Clear and understandable", "Fast"],
+    answer: 2
+  },
+  {
+    question: "A major cause of stress among youth is:",
+    options: ["Good health", "Exams and expectations", "Sports", "Travelling"],
+    answer: 1
+  },
+  {
+    question: "Leadership is the process of:",
+    options: ["Dominating people", "Influencing and guiding others", "Punishing people", "Ignoring team"],
+    answer: 1
+  },
+  {
+    question: "A good leader must have:",
+    options: ["Laziness", "Dishonesty", "Confidence", "Fear"],
+    answer: 2
+  },
+  {
+    question: "Motivation is:",
+    options: ["A negative feeling", "Force that drives people to act", "A punishment", "Instructions from teachers"],
+    answer: 1
+  },
+  {
+    question: "Moral values include:",
+    options: ["Cheating", "Stealing", "Honesty", "Irresponsibility"],
+    answer: 2
+  },
+  {
+    question: "Honour Code in NCC teaches:",
+    options: ["Disrespect", "Courage & integrity", "Carelessness", "Corruption"],
+    answer: 1
+  },
+  {
+    question: "Disaster means:",
+    options: ["Celebration", "Sudden event causing major damage", "Sports event", "Festival"],
+    answer: 1
+  },
+  {
+    question: "Earthquake is an example of:",
+    options: ["Man-made disaster", "Natural disaster", "Chemical disaster", "Industrial disaster"],
+    answer: 1
+  },
+  {
+    question: "Civil Defence Organisation helps in:",
+    options: ["Sports", "Firefighting & rescue", "Exams", "Voting"],
+    answer: 1
+  },
+  {
+    question: "During a fire, you should:",
+    options: ["Use lift", "Run blindly", "Use fire extinguisher", "Stay inside closed room"],
+    answer: 2
+  },
+  {
+    question: "Floods are mainly caused by:",
+    options: ["Excess rainfall", "Mobile phones", "Pollution", "Lack of exercise"],
+    answer: 0
+  },
+  {
+    question: "Swachh Bharat Abhiyan was launched to:",
+    options: ["Promote tourism", "Promote cleanliness", "Increase pollution", "Build malls"],
+    answer: 1
+  },
+  {
+    question: "Which is a major social evil in India?",
+    options: ["Education", "Drug abuse", "Sports", "NCC training"],
+    answer: 1
+  },
+  {
+    question: "Tree plantation helps in reducing:",
+    options: ["Oxygen", "Pollution", "Rain", "Soil"],
+    answer: 1
+  },
+  {
+    question: "NGO stands for:",
+    options: ["National Group Organisation", "Non-Government Organisation", "New Government Office", "National Growth Operation"],
+    answer: 1
+  },
+  {
+    question: "Cyber safety education helps prevent:",
+    options: ["Games", "Social media usage", "Online frauds", "Exercise"],
+    answer: 2
+  },
+  {
+    question: "Personal hygiene includes:",
+    options: ["Wearing dirty clothes", "Bathing regularly", "Avoiding water", "Sleeping late"],
+    answer: 1
+  },
+  {
+    question: "First aid is given:",
+    options: ["After treatment", "Before treatment", "Immediately after injury", "Only by doctors"],
+    answer: 2
+  },
+  {
+    question: "A common symptom of dehydration is:",
+    options: ["High energy", "Dizziness", "Happiness", "Weight gain"],
+    answer: 1
+  },
+  {
+    question: "Yoga helps improve:",
+    options: ["Stress levels", "Flexibility & mental health", "Anger", "Laziness"],
+    answer: 1
+  },
+  {
+    question: "Sanitation helps prevent:",
+    options: ["Diseases", "Education", "Sports", "Music"],
+    answer: 0
+  },
+  {
+    question: "Adventure training in NCC develops:",
+    options: ["Fear", "Laziness", "Courage", "Weakness"],
+    answer: 2
+  },
+  {
+    question: "A major environmental problem is:",
+    options: ["Clean rivers", "Low pollution", "Deforestation", "Fresh air"],
+    answer: 2
+  },
+  {
+    question: "Global warming is caused mainly by:",
+    options: ["Sunlight", "Greenhouse gases", "Rain", "Oxygen"],
+    answer: 1
+  },
+  {
+    question: "Conservation means:",
+    options: ["Destroying resources", "Polluting rivers", "Protecting natural resources", "Cutting forests"],
+    answer: 2
+  },
+  {
+    question: "Waste management involves:",
+    options: ["Burning waste openly", "Reusing and recycling", "Throwing waste anywhere", "Increasing garbage"],
+    answer: 1
+  },
+  {
+    question: "Obstacle training develops:",
+    options: ["Physical fitness", "Laziness", "Fear", "Boredom"],
+    answer: 0
+  },
+  {
+    question: "NCC was originally derived from:",
+    options: ["Police Act", "University Corps Act", "Indian Defence Act", "Youth Act"],
+    answer: 1
+  },
+  {
+    question: "The Girl’s Division was started in:",
+    options: ["1947", "1948", "1949", "1952"],
+    answer: 2
+  },
+  {
+    question: "YEP stands for:",
+    options: ["Youth Education Programme", "Youth Exchange Programme", "Young Exercise Patrol", "Youth Empowerment Panel"],
+    answer: 1
+  },
+  {
+    question: "NCC’s guiding theme in camps is:",
+    options: ["Entertainment", "National unity & discipline", "Only sports", "Fashion & style"],
+    answer: 1
+  }
+
+
       // Add 45 more questions for easy set 1
     ],
     2: [
