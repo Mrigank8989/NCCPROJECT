@@ -188,16 +188,29 @@ async function getUserScores() {
     const res = await fetch(
       `https://nccserver.onrender.com/api/attempts?user_id=${user.user_id}`
     );
-    if (!res.ok) throw new Error("Failed to fetch user scores");
+
+    if (!res.ok) {
+      console.error("❌ Server returned error:", res.status);
+      return [];
+    }
 
     const data = await res.json();
+
+    // 🔥 Ensure ALWAYS an array
+    if (!Array.isArray(data)) {
+      console.warn("⚠️ Server returned non-array:", data);
+      return [];
+    }
+
     console.log("📥 User scores fetched:", data);
     return data;
+
   } catch (err) {
     console.error("Error fetching user scores:", err);
     return [];
   }
 }
+
 
 // ─── Expose Functions Globally ──────────────────────────────────
 window.auth = {
