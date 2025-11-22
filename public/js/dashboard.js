@@ -98,47 +98,43 @@ function setupDifficultyButtons() {
 }
 
 // Generate quiz set cards
-function generateQuizSetCards(difficulty, container) {
+async function generateQuizSetCards(difficulty, container) {
   container.innerHTML = '';
-  
-  const currentUser = auth.getCurrentUser();
-  const userScores = auth.getUserScores(currentUser.username);
-  
+
+  const userScores = await auth.getUserScores();   // <-- FIXED (always array)
+
   // Create 10 quiz set cards
   for (let i = 1; i <= 10; i++) {
     const card = document.createElement('div');
     card.className = 'quiz-set-card';
-    
+
     // Check if user has completed this quiz
-    const completedQuiz = userScores.find(score => 
-      score.difficulty === difficulty && score.setNumber === i
+    const completedQuiz = userScores.find(score =>
+      score.quiz_id === i && score.difficulty === difficulty
     );
-    
+
     if (completedQuiz) {
       card.classList.add('completed');
     }
-    
+
     card.innerHTML = `
       <h4>Quiz Set ${i}</h4>
-      <p>50 Questions</p>
-      ${completedQuiz ? `<p class="score">Score: ${completedQuiz.percentage}%</p>` : ''}
+      <p>${completedQuiz ? `Score: ${completedQuiz.percentage}%` : '50 Questions'}</p>
     `;
-    
-    // Add click event to start quiz
+
+    // Add click event
     card.addEventListener('click', () => {
-      // Store selected quiz information in sessionStorage
       sessionStorage.setItem('selectedQuiz', JSON.stringify({
         difficulty,
         setNumber: i
       }));
-      
-      // Navigate to quiz page
       window.location.href = 'quiz.html';
     });
-    
+
     container.appendChild(card);
   }
 }
+
 
 // Helper function to capitalize first letter
 function capitalizeFirstLetter(string) {
