@@ -493,7 +493,32 @@ const allQuizQuestions = {
     question: "BRD stands for ________",
     options: ["Base Repair Depot", "Battle Ready Division", "Base Rescue Division", "Brigade Reserve Detail"],
     answer: 0
-  }
+  },
+      {
+  question: "Aero-modelling primarily teaches:",
+  options: ["Painting", "Drawing", "Basic aerodynamics and aircraft behavior", "Ground duty"],
+  answer: 2
+},
+{
+  question: "Free-flight models are:",
+  options: ["Radio-controlled", "Not controlled after launch", "Drone-based", "Helicopters"],
+  answer: 1
+},
+{
+  question: "RPA stands for:",
+  options: ["Radio Propelled Aircraft", "Remote Piloted Aircraft", "Rapid Propulsion Aircraft", "Rotating Powered Aircraft"],
+  answer: 1
+},
+{
+  question: "Fly-by-optics replaces wires with:",
+  options: ["Plastic", "Fiber cables", "Steel rods", "Rubber tubes"],
+  answer: 1
+},
+{
+  question: "Chinook helicopters have what rotor system?",
+  options: ["Single rotor", "Ducted fan", "Tandem rotors", "Jet rotors"],
+  answer: 2
+}
 
 
       // Add 49 more questions for easy set 2
