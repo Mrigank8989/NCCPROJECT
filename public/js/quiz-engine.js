@@ -204,21 +204,20 @@ function finishQuiz() {
   stopTimer();
 
   const snapshot = captureSnapshot();
-  const score = calculateScore();
-  const percentage = Math.round((score / currentQuiz.totalQuestions) * 100);
+  const { totalScore, correct, wrong, unanswered } = calculateScore();
+  const percentage = Math.round((totalScore / (currentQuiz.totalQuestions * 4)) * 100);
 
   document.getElementById("questionContainer").classList.add("hidden");
   document.getElementById("quizControls").classList.add("hidden");
   document.getElementById("resultContainer").classList.remove("hidden");
 
-  document.getElementById("finalScore").textContent = score;
+  document.getElementById("finalScore").textContent = totalScore;
   document.getElementById("totalQuestions").textContent = currentQuiz.totalQuestions;
   document.getElementById("scorePercentage").textContent = `${percentage}%`;
-  document.getElementById("correctAnswers").textContent = score;
-  document.getElementById("incorrectAnswers").textContent =
-    currentQuiz.totalQuestions - score - getUnansweredCount();
-  document.getElementById("unansweredQuestions").textContent = getUnansweredCount();
-
+  document.getElementById("correctAnswers").textContent = correct;
+  document.getElementById("incorrectAnswers").textContent = wrong;
+  document.getElementById("unansweredQuestions").textContent = unanswered;
+  
   window.auth.saveQuizScore({
     difficulty: currentQuiz.difficulty,
     setNumber: currentQuiz.setNumber,
@@ -311,10 +310,30 @@ function getUnansweredCount() {
 }
 
 function calculateScore() {
-  return userAnswers.reduce((score, ans, i) => {
-    return ans === currentQuiz.questions[i].answer ? score + 1 : score;
-  }, 0);
+  const MARK_CORRECT = 4;
+  const MARK_WRONG = -1;
+  const MARK_UNATTEMPTED = 0;
+
+  let correct = 0;
+  let wrong = 0;
+  let unanswered = 0;
+
+  userAnswers.forEach((ans, i) => {
+    if (ans === null) unanswered++;
+    else if (ans === currentQuiz.questions[i].answer) correct++;
+    else wrong++;
+  });
+
+  const totalScore = (correct * MARK_CORRECT) + (wrong * MARK_WRONG) + (unanswered * MARK_UNATTEMPTED);
+
+  return {
+    totalScore,
+    correct,
+    wrong,
+    unanswered
+  };
 }
+
 
 function capitalizeFirstLetter(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
