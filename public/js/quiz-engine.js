@@ -219,14 +219,18 @@ function finishQuiz() {
   document.getElementById("unansweredQuestions").textContent = unanswered;
   
   window.auth.saveQuizScore({
-    difficulty: currentQuiz.difficulty,
-    setNumber: currentQuiz.setNumber,
-    score,
-    totalQuestions: currentQuiz.totalQuestions,
-    percentage,
-    date: new Date().toISOString(),
-    snapshot
-  });
+  difficulty: currentQuiz.difficulty,
+  setNumber: currentQuiz.setNumber,
+  totalScore,
+  correct,
+  wrong,
+  unanswered,
+  totalQuestions: currentQuiz.totalQuestions,
+  percentage,
+  snapshot,
+  date: new Date().toISOString()
+});
+
 }
 
 function reviewQuiz() {
