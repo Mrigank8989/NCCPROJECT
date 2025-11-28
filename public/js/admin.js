@@ -51,18 +51,30 @@ function setupTabs() {
 }
 
 // Load Scores
-function loadUserScores() {
-  const scoresTableBody = document.getElementById('scoresTableBody');
-  const userFilter = document.getElementById('userFilter');
+async function loadUserScores() {
+  const scoresTableBody = document.getElementById("scoresTableBody");
+  scoresTableBody.innerHTML = `
+    <tr><td colspan="10" class="text-center">Loading results...</td></tr>
+  `;
 
-  const allScores = auth.getAllScores();
-  scoresTableBody.innerHTML = '';
-  populateUserFilter(userFilter, allScores);
-  populateScoresTable(scoresTableBody, allScores);
+  try {
+    const response = await fetch("https://nccserver.onrender.com/api/attempts");
+    const allScores = await response.json();
 
-  document.getElementById('applyFilterBtn').addEventListener('click', () => {
-    applyScoresFilter();
-  });
+    if (!Array.isArray(allScores) || allScores.length === 0) {
+      scoresTableBody.innerHTML = `
+        <tr><td colspan="10" class="text-center">No results found</td></tr>
+      `;
+      return;
+    }
+
+    populateScoresTable(scoresTableBody, allScores);
+  } catch (err) {
+    console.error("Error loading scores:", err);
+    scoresTableBody.innerHTML = `
+      <tr><td colspan="10" class="text-center text-red">Failed to load results</td></tr>
+    `;
+  }
 }
 
 function populateUserFilter(userFilter, scores) {
@@ -79,35 +91,27 @@ function populateUserFilter(userFilter, scores) {
 }
 
 function populateScoresTable(tableBody, scores) {
-  tableBody.innerHTML = '';
-
-  if (scores.length === 0) {
-    const row = document.createElement('tr');
-    row.innerHTML = `<td colspan="7" class="text-center">No scores found</td>`;
-    tableBody.appendChild(row);
-    return;
-  }
+  tableBody.innerHTML = "";
 
   scores.forEach(score => {
-    const scoreDate = new Date(score.date);
-    const formattedDate = scoreDate.toLocaleDateString() + ' ' + scoreDate.toLocaleTimeString();
+    const formattedDate = new Date(score.attempt_date).toLocaleString();
 
-    const row = document.createElement('tr');
+    const row = document.createElement("tr");
     row.innerHTML = `
-      <td>${score.username}</td>
-      <td>Set ${score.setNumber}</td>
-      <td>${capitalizeFirstLetter(score.difficulty)}</td>
-      <td>${score.score}/${score.totalQuestions}</td>
+      <td>${score.username || "Unknown"}</td>
+      <td>Set ${score.quiz_id}</td>
+      <td>${capitalizeFirstLetter(score.difficulty || "N/A")}</td>
+      <td>${score.score}</td>
+      <td>${score.correct}</td>
+      <td>${score.wrong}</td>
+      <td>${score.unanswered}</td>
       <td>${score.percentage}%</td>
       <td>${formattedDate}</td>
       <td>${score.snapshot 
-        ? `<button class="btn btn-secondary view-snapshot-btn" data-img="${score.snapshot}">View Snapshot</button>`
+        ? `<button class="btn btn-secondary view-snapshot-btn" data-img="${score.snapshot}">View</button>`
         : 'No Image'}</td>
       <td>
-        <div class="action-btns">
-          <button class="action-btn view-btn" data-username="${score.username}" data-set="${score.setNumber}" data-difficulty="${score.difficulty}">View</button>
-          <button class="action-btn delete-btn" data-username="${score.username}" data-date="${score.date}">Delete</button>
-        </div>
+        <button class="action-btn delete-btn" data-id="${score.attempt_id}">Delete</button>
       </td>
     `;
     tableBody.appendChild(row);
@@ -115,6 +119,7 @@ function populateScoresTable(tableBody, scores) {
 
   addScoreActionListeners();
 }
+
 
 function addScoreActionListeners() {
   document.querySelectorAll('.view-btn').forEach(button => {
@@ -134,19 +139,26 @@ function addScoreActionListeners() {
   });
 }
 
-function deleteScore(username, date) {
-  const users = JSON.parse(localStorage.getItem('ncc_quiz_users'));
-  if (!users || !users[username]) return alert('User not found');
+async function deleteScore(attemptId) {
+  if (!confirm("Are you sure you want to delete this attempt?")) return;
 
-  const scores = users[username].quizzesTaken;
-  const index = scores.findIndex(s => s.date === date);
-  if (index === -1) return alert('Score record not found');
+  try {
+    const res = await fetch(`https://nccserver.onrender.com/api/attempts/${attemptId}`, { method: "DELETE" });
 
-  scores.splice(index, 1);
-  localStorage.setItem('ncc_quiz_users', JSON.stringify(users));
-  loadUserScores();
-  loadQuizStatistics();
-  alert('Score record deleted successfully');
+    if (!res.ok) throw new Error("Delete failed");
+
+    alert("Deleted successfully!");
+    loadUserScores();
+  } catch (err) {
+    alert("Failed to delete attempt");
+    console.error(err);
+  }
+}
+
+function addScoreActionListeners() {
+  document.querySelectorAll('.delete-btn').forEach(btn => {
+    btn.addEventListener('click', () => deleteScore(btn.dataset.id));
+  });
 }
 
 function applyScoresFilter() {
