@@ -147,14 +147,19 @@ async function saveQuizScore(scoreData) {
     }
 
     const payload = {
-      user_id: user.user_id,
-      quiz_id: scoreData.setNumber,
-      score: scoreData.score,
-      total_questions: scoreData.totalQuestions,
-      percentage: scoreData.percentage,
-      time_taken: scoreData.timeTaken || 0,
-      is_completed: true,
-    };
+  user_id: user.user_id,
+  quiz_id: scoreData.setNumber,
+  score: scoreData.totalScore,
+  correct: scoreData.correct,
+  wrong: scoreData.wrong,
+  unanswered: scoreData.unanswered,
+  total_questions: scoreData.totalQuestions,
+  percentage: scoreData.percentage,
+  time_taken: scoreData.timeTaken || 0,
+  snapshot: scoreData.snapshot,
+  is_completed: true,
+};
+
 
     console.log("📤 Sending quiz result to backend:", payload);
 
